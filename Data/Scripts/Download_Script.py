@@ -4,7 +4,7 @@ import os
 import sys
 sys.stdout.reconfigure(encoding='utf-8')  # Fix für Unicode-Fehler
 # Erstelle einen Ordner für die PDFs auf dem Desktop
-save_directory = r"/Users/mdni/PycharmProjects/SAI3/Data"
+save_directory = r"/Users/mdni/PycharmProjects/SAI3/Data/PDF_Data"
 os.makedirs(save_directory, exist_ok=True)
 # Suche nach den neuesten Papern zu einem Thema (z.B. "machine learning")
 search = arxiv.Search(

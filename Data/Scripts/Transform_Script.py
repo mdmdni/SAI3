@@ -3,10 +3,10 @@ import fitz  # PyMuPDF
 import re
 
 # Pfad zum Ordner mit PDFs
-pdf_folder = "/Users/mdni/PycharmProjects/SAI3/Data"
+pdf_folder = "/Users/mdni/PycharmProjects/SAI3/Data/PDF_Data"
 
 # Ausgabe-Datei
-output_text_file = "/Users/mdni/PycharmProjects/SAI3/Data/combined_text.txt"
+output_text_file = "/Data/combined_text.txt"
 
 # Zielwortanzahl
 word_limit = 1_200_000
