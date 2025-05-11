@@ -6,7 +6,7 @@ import re
 pdf_folder = "/Users/mdni/PycharmProjects/SAI3/Data/PDF_Data"
 
 # Ausgabe-Datei
-output_text_file = "/Data/combined_text.txt"
+output_text_file = os.path.join(os.path.dirname(pdf_folder), "combined_text.txt")
 
 # Zielwortanzahl
 word_limit = 1_200_000
@@ -53,3 +53,4 @@ with open(output_text_file, "w", encoding="utf-8") as f:
     f.write("\n\n".join(all_text))
 
 print(f"Text gespeichert in: {output_text_file}")
+

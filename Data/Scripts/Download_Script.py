@@ -8,8 +8,8 @@ save_directory = r"/Users/mdni/PycharmProjects/SAI3/Data/PDF_Data"
 os.makedirs(save_directory, exist_ok=True)
 # Suche nach den neuesten Papern zu einem Thema (z.B. "machine learning")
 search = arxiv.Search(
-   query="cyber security",
-   max_results=5,
+   query="cyber security AND cat:cs.CR",
+   max_results=250,
    sort_by=arxiv.SortCriterion.SubmittedDate
 )
 # Verwende die neue Methode `Client().results()`
