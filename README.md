@@ -22,16 +22,27 @@ git clone <repository-url>
 cd SAI3/Data/Scripts
 ```
 
-### 2. RAG System starten
+### ⭐ 2. PREMIUM: OpenAI Integration (empfohlen für beste Ergebnisse)
 ```bash
-# Option 1: Vollständige Reference Architecture (empfohlen)
+# Setze dein OpenAI API Key
+export OPENAI_API_KEY="sk-your-api-key-here"
+
+# Starte das Premium RAG System
+python3 RAG_with_OpenAI.py
+```
+
+💰 **Kosten:** ~$0.001-0.005 pro Anfrage | 🔒 **Sicherheit:** Siehe [SECURITY.md](SECURITY.md)
+
+### 3. Alternative: Lokales System (kostenfrei)
+```bash
+# Option 1: Vollständige Reference Architecture
 python3 RAG_Reference_Implementation.py
 
 # Option 2: Basic System (ohne Dependencies)
 python3 Basic_Text_Search.py
 ```
 
-### 3. Fragen stellen
+### 4. Fragen stellen
 ```
 ❓ Deine Frage: machine learning cybersecurity
 ❓ Deine Frage: Was sind Zero-Day-Exploits?
@@ -56,12 +67,13 @@ python3 Basic_Text_Search.py
 
 ## 🛠️ Verfügbare RAG-Systeme
 
-| System | Beschreibung | Dependencies | Empfehlung |
-|--------|--------------|--------------|------------|
-| **RAG_Reference_Implementation.py** | Vollständige Dozenten-Architektur | Optional: OpenAI | 🏆 **Beste Wahl** |
-| **Basic_Text_Search.py** | Produktionsbereit, TF-IDF basiert | Keine | ⭐ Einfach & schnell |
-| **Simple_RAG_System.py** | Moderne Embeddings | ChromaDB, Sentence-Transformers | 🔬 Experimentell |
-| **RAG_LlamaIndex_Setup.py** | Enterprise Framework | LlamaIndex, ChromaDB | 🏢 Enterprise |
+| System | Beschreibung | Qualität | Dependencies | Kosten |
+|--------|--------------|----------|--------------|--------|
+| **RAG_with_OpenAI.py** | Premium mit OpenAI GPT-4 | ⭐⭐⭐⭐⭐ | OpenAI API | ~$0.001-0.005/query |
+| **RAG_Reference_Implementation.py** | Vollständige Dozenten-Architektur | ⭐⭐⭐⭐ | Optional: OpenAI | Kostenlos |
+| **Basic_Text_Search.py** | Produktionsbereit, TF-IDF basiert | ⭐⭐⭐ | Keine | Kostenlos |
+| **Simple_RAG_System.py** | Moderne Embeddings | ⭐⭐⭐⭐ | ChromaDB, Sentence-Transformers | Kostenlos |
+| **RAG_LlamaIndex_Setup.py** | Enterprise Framework | ⭐⭐⭐⭐ | LlamaIndex, ChromaDB | Kostenlos |
 
 ## 🔧 Optional: Erweiterte Features
 
